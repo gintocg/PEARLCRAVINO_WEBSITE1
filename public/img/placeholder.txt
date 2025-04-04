@@ -1,0 +1,9 @@
+This directory will contain the following images:
+- logo.png (Pearlcravino logo)
+- hero-bg.jpg (Hero section background)
+- product1.jpg, product2.jpg, product3.jpg, product4.jpg, product5.jpg, product6.jpg (Product images)
+- customer1.jpg, customer2.jpg, customer3.jpg (Customer testimonial images)
+- about-story.jpg (About page image)
+- team1.jpg, team2.jpg, team3.jpg (Team member images)
+
+Please replace these with actual images for your website.
