@@ -3,7 +3,7 @@ services:
     name: pearlcravino-website
     env: node
     buildCommand: npm install
-    startCommand: npm server.js
+    startCommand: npm start
     healthCheckPath: /health
     envVars:
       - key: NODE_ENV
