@@ -4,193 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Pearlcravino</title>
+    <meta name="description" content="Explore Pearlcravino's premium makhana (fox nuts) snacks in various flavors.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <h1>Pearlcravino</h1>
+                    <img src="img/logo.png" alt="Pearlcravino Logo">
                 </a>
             </div>
-            <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Our Products</h1>
+            <p>Discover our range of premium makhana snacks</p>
+        </section>
+
+        <section class="products-section">
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="spicy">Spicy</button>
+                <button class="filter-btn" data-filter="sweet">Sweet</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-item" data-category="classic">
+                    <img src="img/product1.jpg" alt="Classic Makhana">
+                    <div class="product-info">
+                        <h3>Classic Makhana</h3>
+                        <p class="product-description">Lightly roasted fox nuts with a hint of salt. Perfect for everyday snacking.</p>
+                        <div class="product-details">
+                            <p><strong>Weight:</strong> 100g</p>
+                            <p><strong>Ingredients:</strong> Fox nuts (Makhana), Salt, Olive Oil</p>
+                            <p><strong>Nutritional Value:</strong> High protein, Low fat, Gluten-free</p>
+                        </div>
+                        <a href="#" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="spicy">
+                    <img src="img/product2.jpg" alt="Spicy Makhana">
+                    <div class="product-info">
+                        <h3>Spicy Makhana</h3>
+                        <p class="product-description">A perfect blend of spices for those who love heat. Great with evening tea.</p>
+                        <div class="product-details">
+                            <p><strong>Weight:</strong> 100g</p>
+                            <p><strong>Ingredients:</strong> Fox nuts (Makhana), Red Chili, Black Pepper, Salt, Olive Oil</p>
+                            <p><strong>Nutritional Value:</strong> High protein, Low fat, Gluten-free</p>
+                        </div>
+                        <a href="#" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="sweet">
+                    <img src="img/product3.jpg" alt="Caramel Makhana">
+                    <div class="product-info">
+                        <h3>Caramel Makhana</h3>
+                        <p class="product-description">Sweet and crunchy fox nuts with a caramel coating. A healthy dessert alternative.</p>
+                        <div class="product-details">
+                            <p><strong>Weight:</strong> 100g</p>
+                            <p><strong>Ingredients:</strong> Fox nuts (Makhana), Jaggery, Ghee</p>
+                            <p><strong>Nutritional Value:</strong> High protein, Low fat, Gluten-free</p>
+                        </div>
+                        <a href="#" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="classic">
+                    <img src="img/product4.jpg" alt="Herb & Garlic Makhana">
+                    <div class="product-info">
+                        <h3>Herb & Garlic Makhana</h3>
+                        <p class="product-description">Fox nuts roasted with aromatic herbs and garlic. A savory delight.</p>
+                        <div class="product-details">
+                            <p><strong>Weight:</strong> 100g</p>
+                            <p><strong>Ingredients:</strong> Fox nuts (Makhana), Garlic, Mixed Herbs, Salt, Olive Oil</p>
+                            <p><strong>Nutritional Value:</strong> High protein, Low fat, Gluten-free</p>
+                        </div>
+                        <a href="#" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="sweet">
+                    <img src="img/product5.jpg" alt="Chocolate Makhana">
+                    <div class="product-info">
+                        <h3>Chocolate Makhana</h3>
+                        <p class="product-description">Fox nuts coated with premium dark chocolate. Indulgence without guilt.</p>
+                        <div class="product-details">
+                            <p><strong>Weight:</strong> 100g</p>
+                            <p><strong>Ingredients:</strong> Fox nuts (Makhana), Dark Chocolate, Coconut Oil</p>
+                            <p><strong>Nutritional Value:</strong> High protein, Low fat, Gluten-free</p>
+                        </div>
+                        <a href="#" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="spicy">
+                    <img src="img/product6.jpg" alt="Peri Peri Makhana">
+                    <div class="product-info">
+                        <h3>Peri Peri Makhana</h3>
+                        <p class="product-description">Fox nuts with a tangy and spicy peri peri flavor. For the adventurous snacker.</p>
+                        <div class="product-details">
+                            <p><strong>Weight:</strong> 100g</p>
+                            <p><strong>Ingredients:</strong> Fox nuts (Makhana), Peri Peri Spice Mix, Salt, Olive Oil</p>
+                            <p><strong>Nutritional Value:</strong> High protein, Low fat, Gluten-free</p>
+                        </div>
+                        <a href="#" class="btn-small">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-benefits">
+            <h2>Why Choose Pearlcravino Makhana?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Sustainably Sourced</h3>
+                    <p>Our makhana is sourced from sustainable farms in Bihar, supporting local communities.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Premium Quality</h3>
+                    <p>We use only the highest quality fox nuts, carefully selected for size and texture.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Benefits</h3>
+                    <p>Low in calories, high in protein, and packed with antioxidants and essential minerals.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-box"></i>
+                    <h3>Eco-Friendly Packaging</h3>
+                    <p>Our packaging is made from recyclable materials to minimize environmental impact.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Pearlcravino Logo">
+                <p>Premium Makhana Snacks</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contactus.html">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
             </div>
-        </div>
-    </header>
-
-    <section class="page-header">
-        <div class="container">
-            <h1>Our Products</h1>
-            <p>Discover our range of premium makhana snacks</p>
-        </div>
-    </section>
-
-    <section class="products-page">
-        <div class="container">
-            <div class="section-intro">
-                <h2>Premium Makhana Flavors</h2>
-                <hr>
-                <p>Our makhana snacks are carefully crafted to provide the perfect balance of taste and nutrition. Made from high-quality fox nuts, our products are roasted to perfection and seasoned with natural ingredients to create delicious flavors that everyone will love.</p>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Snack Street, Mumbai, India</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@pearlcravino.com</p>
             </div>
-            
-            <div class="products-grid">
-                <div class="product-card animate-on-scroll">
-                    <div class="product-img">
-                        <img src="img/product-1.jpg" alt="Classic Salted Makhana">
-                    </div>
-                    <div class="product-info">
-                        <h3>Classic Salted Makhana</h3>
-                        <div class="product-price">₹199.00</div>
-                        <p class="product-description">Our classic salted makhana is lightly seasoned with Himalayan pink salt for a perfect savory snack that's both delicious and nutritious.</p>
-                        <a href="#" class="btn secondary-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card animate-on-scroll">
-                    <div class="product-img">
-                        <img src="img/product-2.jpg" alt="Spicy Masala Makhana">
-                    </div>
-                    <div class="product-info">
-                        <h3>Spicy Masala Makhana</h3>
-                        <div class="product-price">₹219.00</div>
-                        <p class="product-description">A perfect blend of traditional Indian spices that gives our makhana a spicy kick, making it an ideal snack for those who love a bit of heat.</p>
-                        <a href="#" class="btn secondary-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card animate-on-scroll">
-                    <div class="product-img">
-                        <img src="img/product-3.jpg" alt="Caramel Makhana">
-                    </div>
-                    <div class="product-info">
-                        <h3>Caramel Makhana</h3>
-                        <div class="product-price">₹249.00</div>
-                        <p class="product-description">Sweet and crunchy caramel-coated makhana that satisfies your sweet cravings without the guilt. A perfect dessert alternative.</p>
-                        <a href="#" class="btn secondary-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card animate-on-scroll">
-                    <div class="product-img">
-                        <img src="img/product-4.jpg" alt="Cheese Makhana">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cheese Makhana</h3>
-                        <div class="product-price">₹229.00</div>
-                        <p class="product-description">Delicious cheese-flavored makhana that's perfect for movie nights or as a quick snack when you're on the go.</p>
-                        <a href="#" class="btn secondary-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card animate-on-scroll">
-                    <div class="product-img">
-                        <img src="img/product-5.jpg" alt="Peri Peri Makhana">
-                    </div>
-                    <div class="product-info">
-                        <h3>Peri Peri Makhana</h3>
-                        <div class="product-price">₹239.00</div>
-                        <p class="product-description">Tangy and spicy peri peri flavored makhana that's packed with flavor and guaranteed to tantalize your taste buds.</p>
-                        <a href="#" class="btn secondary-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card animate-on-scroll">
-                    <div class="product-img">
-                        <img src="img/product-6.jpg" alt="Chocolate Makhana">
-                    </div>
-                    <div class="product-info">
-                        <h3>Chocolate Makhana</h3>
-                        <div class="product-price">₹259.00</div>
-                        <p class="product-description">Indulge in the rich taste of chocolate with our chocolate-coated makhana, a healthier alternative to traditional chocolate snacks.</p>
-                        <a href="#" class="btn secondary-btn">View Details</a>
-                    </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="product-benefits">
-        <div class="container">
-            <h2>Why Choose Our Makhana?</h2>
-            <hr>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <i class="fas fa-leaf"></i>
-                    <h3>100% Natural</h3>
-                    <p>Made from organically grown fox nuts with no artificial additives or preservatives.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Heart Healthy</h3>
-                    <p>Low in sodium and cholesterol, making them a heart-friendly snacking option.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-seedling"></i>
-                    <h3>Rich in Nutrients</h3>
-                    <p>Packed with protein, calcium, magnesium, and antioxidants for overall health.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-weight"></i>
-                    <h3>Weight Management</h3>
-                    <p>Low in calories and high in fiber, helping you feel full for longer.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div class="container">
-            <h3>Ready to try our premium makhana snacks?</h3>
-            <p>Contact us for wholesale inquiries or partnership opportunities</p>
-            <a href="contactus.html" class="btn primary-btn">Get in touch</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Pearlcravino</h2>
-                    <p>Premium Makhana Snacks</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p><i class="fas fa-envelope"></i> info@pearlcravino.com</p>
-                    <p><i class="fas fa-phone"></i> +91 1234567890</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Pearlcravino. All Rights Reserved.</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pearlcravino. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.product-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    productItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
