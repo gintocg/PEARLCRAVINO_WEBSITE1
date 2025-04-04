@@ -64,6 +64,21 @@ pearlcravino-website/
 
 ## Deployment Instructions
 
+The website is configured for easy deployment to Render.com using the included `render.yaml` configuration file.
+
+### Deploying to Render.com
+
+1. Create a Render account at [render.com](https://render.com/)
+2. Connect your GitHub repository to Render
+3. Create a new Web Service and select your repository
+4. Render will automatically detect the Node.js application
+5. Use the following settings:
+   - Build Command: `npm install`
+   - Start Command: `npm start`
+   - Health Check Path: `/health`
+6. Click "Create Web Service"
+7. Your site will be deployed automatically whenever you push to your repository
+
 ### Deploying to Netlify
 
 1. Create a Netlify account at [netlify.com](https://www.netlify.com/)
@@ -80,6 +95,19 @@ pearlcravino-website/
    netlify deploy
    ```
 5. Follow the prompts to complete the deployment
+
+### Deploying to Render.com
+
+1. Create a Render account at [render.com](https://render.com/)
+2. Connect your GitHub repository to Render
+3. Create a new Web Service and select your repository
+4. Render will automatically detect the Node.js application
+5. Use the following settings:
+   - Build Command: `npm install`
+   - Start Command: `npm start`
+   - Health Check Path: `/health`
+6. Click "Create Web Service"
+7. Your site will be deployed automatically whenever you push to your repository
 
 ### Deploying to Heroku
 
