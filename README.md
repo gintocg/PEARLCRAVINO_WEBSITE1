@@ -46,7 +46,7 @@ pearlcravino-website/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/pearlcravino-website.git
+   git clone https://github.com/gintocg/pearlcravino-website1.git
    cd pearlcravino-website
    ```
 
