@@ -13,6 +13,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Health check endpoint for Render
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+});
+
 // Routes
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
